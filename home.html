@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HOME</title>
+    <link rel="short icon" href="logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="UMS">
+            <h2>U<span style="color: rgb(231, 130, 112);">M</span>S</h2>
+        </div>
+        <div class="nav">
+            <a href="home.html" class="active">
+                <i class="fa-solid fa-house"></i>
+                <h3>Home</h3>
+            </a>
+            <a href="timeTable.html">
+                <i class="fa-solid fa-calendar-day"></i>
+                <h3>Time Table</h3>
+            </a>
+            <a href="exam.html">
+                <i class="fa-solid fa-rectangle-list"></i>
+                <h3>Exam</h3>
+            </a>
+            <a href="">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h3>Notes</h3>
+            </a>
+            <a href="">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <h3>Logout</h3>
+            </a>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="all">
+            <div class="info">
+                <div class="basic_info">
+                    <div class="img">
+                        <!-- <svg><circle cx="38" cy="38" r="38"></circle></svg> -->
+                        <img src="profile_photo.jpg" alt="my_photo">
+                    </div>
+    
+                    <div class="name">
+                        <p id="light">Hey, <span id="bold">Pushkar</span><br>12319111 <br>8.23</p>
+                    </div>
+                </div>
+    
+                <div class="another_info">
+                    <p id="light"><span id="bold">Branch</span> <br>Information Technology</p>
+                    <p id="light"><span id="bold">D.O.B</span> <br>16-sep-2004</p>
+                    <p id="light"><span id="bold">Contact</span> <br>8868033244</p>
+                    <p id="light"><span id="bold">Email</span><br>varshpush@gmail.com</p>
+                    <p id="light"><span id="bold">Address</span> <br>NK Pharma Agencies,Kasganj</p>
+                </div>
+    
+            </div>
+
+            <div class="exam">
+                <h2>EXAMs</h2>
+                <table id="tab" class="table">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Room</th>
+                            <th scope="col">Subject</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+            
+            
+        </div>
+        
+
+        <main>
+            <h1>Attendance</h1>
+            <div class="subjects">
+                <div class="ft">
+                    <span class="fa-solid fa-brain"></span>
+                    <h3>Frontend</h3>
+                    <h2>12/14</h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="38"></circle></svg>
+                        <div class="number"><p>86%</p></div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+
+                <div class="os">
+                    <span class="fa-brands fa-ubuntu"></span>
+                    <h3>Operating System</h3>
+                    <h2>10/16</h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="38"></circle></svg>
+                        <div class="number"><p>63%</p></div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+
+                <div class="fig">
+                    <span class="fa-brands fa-figma"></span>
+                    <h3>Figma</h3>
+                    <h2>14/14</h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="38"></circle></svg>
+                        <div class="number"><p>100%</p></div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+
+                <div class="back">
+                    <span class="fa-solid fa-database"></span>
+                    <h3>Backend</h3>
+                    <h2>15/16</h2>
+                    <div class="progress">
+                        <svg><circle cx="38" cy="38" r="38"></circle></svg>
+                        <div class="number"><p>94%</p></div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                 
+            <div class="ana">
+                <span class="fa-solid fa-brain"></span>
+                <h3>Analytics</h3>
+                <h2>10/14</h2>
+                <div class="progress">
+                    <svg><circle cx="38" cy="38" r="38"></circle></svg>
+                    <div class="number"><p>72%</p></div>
+                </div>
+                <small class="text-muted">Last 24 Hours</small>
+            </div>
+
+            <div class="java">
+                <span class="fa-solid fa-brain"></span>
+                <h3>Java</h3>
+                <h2>16/16</h2>
+                <div class="progress">
+                    <svg><circle cx="38" cy="38" r="38"></circle></svg>
+                    <div class="number"><p>100%</p></div>
+                </div>
+                <small class="text-muted">Last 24 Hours</small>
+            </div>
+            </div>
+    
+
+            <div class="timetable" id="timetable">
+                <div>
+                    <h2>Today's Timetable</h2>
+                </div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Time</th>
+                            <th scope="col">Room No.</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="timeTableBody"></tbody>
+                </table>
+            </div>
+            
+        </main>
+        
+       <div class="right">
+        <div class="announce">
+            <h2>Announcements</h2>
+            <div class="updates">
+                <div class="message">
+                    <p> <b>Academic</b> Summer training internship with Live Projects.</p>
+                    <small class="text-muted">2 Minutes Ago</small>
+                </div>
+                <div class="message">
+                    <p> <b>Co-curricular</b> Global internship oportunity by Student organization.</p>
+                    <small class="text-muted">10 Minutes Ago</small>
+                </div>
+                <div class="message">
+                    <p> <b>Examination</b> Instructions for Mid Term Examination.</p>
+                    <small class="text-muted">Yesterday</small>
+                </div>
+            </div>
+        </div>
+        <div class="leave">
+            <h2>Teachers on leave</h2>
+                <div class="teacher">
+                    <div class="profile-photo"><img src="profile-2.jpeg" alt=""></div>
+                    <div class="info">
+                        <h3>The Professor</h3>
+                        <small class="text-muted">Full Day</small>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div class="profile-photo"><img src="profile-3.jpg" alt=""></div>
+                    <div class="info">
+                        <h3>Lisa Manobal</h3>
+                        <small class="text-muted">Half Day</small>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div class="profile-photo"><img src="profile-2.jpeg" alt=""></div>
+                    <div class="info">
+                        <h3>Professor</h3>
+                        <small class="text-muted">Full Day</small>
+                    </div>
+                </div>
+        </div>
+       </div>
+
+    </div>
+    <div class="community">
+        <i class="fas fa-people-arrows"></i>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

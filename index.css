@@ -1,0 +1,445 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    background: #f6f6f9;
+    user-select: none;
+    color: #363949;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    height: 1cm;
+    padding: 1rem;
+    background-color: white;
+    font-size: 12px;
+    /* box-shadow: 0 5px 5px rgba(132, 139, 200, 0.18); */
+    color: #7d8da1;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+header .logo img {
+    height: 1cm;
+    width: 1cm;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+header .nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 2rem;
+    transition: 500ms;
+    position: relative;
+    color: rgba(28, 28, 28, 0.871);
+}
+
+.active {
+    background-color: #95afce3f;
+}
+
+header .nav a.active::before {
+    content: "";
+    background-color: #7380ec;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+header .nav a:hover {
+    padding-bottom: 1.5rem;
+}
+
+.container {
+    display: flex;
+    width: 93%;
+    margin: 0 0.3rem;
+    gap: 2rem;
+    padding-top: 5rem; 
+}
+.container .all{
+    height: 100%;
+}
+.container .info {
+    border-radius: 20px;
+    font-size: 12px;
+    width: 6cm;
+    height: 100%;
+    box-shadow: -5px -5px 10px rgba(150, 150, 150, 0.403), 5px 5px 5px rgba(132, 139, 200, 0.18);
+    padding: 0 1.8rem 1.8rem 0.5rem;
+}
+
+.container .info .basic_info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0rem 0.5rem;
+    box-shadow: 0 5px 5px rgba(132, 139, 200, 0.18);
+    /* line-height: ;  */
+}
+
+
+
+#light:not(span #light) {
+    color: rgba(0, 0, 0, 0.492);
+}
+
+#bold {
+    color: black;
+    font-weight: bolder;
+}
+
+.container .info .basic_info img {
+    width: 1.5cm;
+    height: 1.5cm;
+    border-radius: 50%;
+    border: 5px solid rgba(132, 139, 200, 0.18);
+    transition: 300ms;
+}
+
+.container .all .exam{
+    width: 6cm;
+    margin-top: 1rem;
+    padding: 1rem 1.8rem;
+    border-radius: 20px;
+    box-shadow: -5px -5px 10px rgba(126, 126, 126, 0.424), 5px 5px 10px rgba(111, 111, 111, 0.529);
+}
+
+.container .all .exam table tbody td{
+    font-size: 12px;
+    width: 6cm;
+    height: 2.8rem;
+    border-bottom: 1px solid rgba(132, 139, 200, 0.18);
+    color: #677483;
+
+}
+
+.container .all .exam #tbody{
+    color: #36394994;
+}
+
+ /* middle ke liye */
+main {
+    padding-left: 2rem;
+}
+
+/* Subjects ka block */
+main .subjects {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.6rem;
+}
+
+main .subjects > div {
+    background-color: white;
+    padding: 1.8rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    box-shadow: 5px 5px 10px rgba(111, 111, 111, 0.529);
+    transition: all 300ms ease;
+}
+
+main .subjects > div:hover {
+    box-shadow: -5px -5px 10px rgb(168, 168, 168), 5px 5px 10px rgba(45, 45, 45, 0.573);
+}
+
+main .subjects > div.ft span,main .subjects > div.java span {
+    background-color: #7380ec;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+}
+main .subjects > div.os span, main .subjects > div.back span{
+    background-color: #ff7782;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+}
+main .subjects > div.fig span, main .subjects > div.ana span{
+    background-color: #41f1b6;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+main .subjects h3 {
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+main .subjects .progress {
+    position: relative;
+    width: 89px;
+    height: 89px;
+    border-radius: 50%;
+    margin: auto;
+}
+/* Circular progress ke liye hai */
+main .subjects svg circle {
+    fill: none;
+    stroke: rgba(85, 76, 192, 0.795);
+    stroke-width: 8;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+main .subjects .ft svg circle {
+    stroke-dasharray: 238.8;
+    stroke-dashoffset: 34.1;
+}
+main .subjects .ana svg circle {
+    stroke-dasharray: 238.8;
+    stroke-dashoffset: 68.2;
+}
+main .subjects .back svg circle {
+    stroke-dasharray: 238.8;
+    stroke-dashoffset: 14.9;
+}
+main .subjects .fig svg circle {
+    stroke-dasharray: 238.8;
+    stroke-dashoffset: 0;
+}
+main .subjects .os svg circle {
+    stroke-dasharray: 238.8;
+    stroke-dashoffset: 89.5;
+}
+main .subjects .java svg circle {
+    stroke-dasharray: 238.8;
+    stroke-dashoffset: 0;
+}
+
+main .subjects .progress .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .subjects small {
+    margin-top: 1rem;
+    display: block;
+}
+
+
+/* Time table wala */
+main .timetable {
+    margin-top: 2rem;
+}
+
+main .timetable h2 {
+    margin-bottom: 0.8rem;
+}
+
+main .timetable table {
+    background-color: white;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1.8rem;
+    text-align: center;
+    box-shadow: rgba(132, 139, 200, 0.18);
+    transition: all 300ms ease;
+}
+
+main table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid rgba(132, 139, 200, 0.18);
+    color: #677483;
+}
+
+main table tbody tr:last-child td {
+    border: none;
+}
+
+main .timetable.active {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .timetable.active h2 {
+    color: #363949;
+}
+
+main .timetable.active table {
+    width: 90%;
+    max-width: 1000px;
+}
+
+main .timetable.active span {
+    display: block;
+    font-size: 2rem;
+    color: #363949;
+    cursor: pointer;
+}
+
+main .timetable.active .closeBtn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.announce {
+    margin-top: 2rem;
+    padding: 1.8rem;
+    border-radius: 2rem;
+    background-color: white;
+    box-shadow: -5px -5px 10px rgba(126, 126, 126, 0.424), 5px 5px 10px rgba(111, 111, 111, 0.529);
+}
+
+.announce h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #363949;
+}
+
+.updates {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.message {
+    background-color: #f6f6f9;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message p {
+    margin: 0;
+}
+
+.message small {
+    color: #7d8da1;
+    font-size: 0.8rem;
+}
+
+.container .right .leave {
+    border-radius: 20px;
+    margin-top: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.leave h2 {
+    margin-bottom: 1rem;
+    color: #363949;
+}
+
+.teacher {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.teacher .info{
+    padding: 0.5rem;
+}
+.teacher .profile-photo img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.teacher .info h3 {
+    margin: 0;
+    color: #363949;
+    font-size: 1rem;
+}
+
+.teacher .info small {
+    color: #7d8da1;
+    font-size: 0.9rem;
+}
+
+.community {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: rgba(85, 76, 192, 0.795);
+    color: #fff;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.community:hover {
+    background-color: rgba(85, 76, 192, 0.795);
+}
+
+/* _________________________________________________________ */
+
+.Table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.Table th,
+.Table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.Table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    text-align: left;
+}
+
+.Table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.Table tbody tr:hover {
+    background-color: #e6f2ff;
+}
+
+#pre,
+#next {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#heading {
+    font-size: 24px;
+    margin: 10px 0;
+}
